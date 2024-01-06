@@ -62,6 +62,7 @@ document.addEventListener("keydown",function(event){
     if( event.key=="Enter" && search_bar.value!="")
     {
         getuser();
+
     }
 })
 
@@ -89,7 +90,6 @@ async function callapi(user_name)
         loading.classList.add("hide");
         if(data?.message==="Not Found")
         {
-        
             notfound.classList.remove("hide");
         }
         else
@@ -107,6 +107,7 @@ async function callapi(user_name)
 
 function putdata(data)
 {
+    console.log(data);
     infocontainer.classList.remove("hide");
     profile_img.src=data?.avatar_url;
     if(data?.name!=null)
