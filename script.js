@@ -24,9 +24,20 @@ const notfound=document.querySelector(".notfound");
 
 
 let mode=1;
+let date=new Date;
+let hours=String(date.getHours()).padStart(2, '0');
+console.log(hours);
+
+console.log(date);
+if(hours>=19 && hours<6 )
+{
+    mode=0;
+}
+changemode();
 
 function changemode()
 {
+   
     if(mode==1)
     {
         wrapper.classList.add("wrapper_dark");
