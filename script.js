@@ -1,3 +1,4 @@
+// all elements of html
 const search_bar=document.querySelector("[search_bar]");
 const searchbtn=document.querySelector("[searchbtn]");
 const infocontainer=document.querySelector("[infocontainer]");
@@ -19,10 +20,10 @@ const tophead=document.querySelector(".tophead");
 const search_tab=document.querySelector(".search_tab");
 const loading=document.querySelector(".loading");
 const dog=document.querySelector(".dog");
-
 const notfound=document.querySelector(".notfound");
 
 
+// function for theme mode
 let mode=0;
 let date=new Date;
 let hours=String(date.getHours()).padStart(2, '0');
@@ -63,8 +64,9 @@ function changemode()
         mode=1;
     }
 }
-modebtn.addEventListener("click",()=>changemode())
 
+// mode btn eventlistner
+modebtn.addEventListener("click",()=>changemode())
 infocontainer.classList.add("hide");
 searchbtn.addEventListener("click",getuser);
 document.addEventListener("keydown",function(event){
@@ -75,6 +77,8 @@ document.addEventListener("keydown",function(event){
     }
 })
 
+
+// api call
 function getuser()
 {
     let user_name=search_bar.value;
@@ -87,7 +91,6 @@ function getuser()
 async function callapi(user_name)
 {
     
-
     try
     {
         console.log("hello");
@@ -114,6 +117,7 @@ async function callapi(user_name)
     }
 }
 
+// render data on page
 function putdata(data)
 {
     console.log(data);

@@ -23,7 +23,7 @@
 {
     background-color: #0f0f0f;
 }
-
+/* heading */
 .tophead
 {
     display: flex;
@@ -33,13 +33,13 @@
     
 }
 
-/* dark */
+/* dark  heading*/
 .tophead_dark
 {
     color: #fff;
 }
 
-
+/* modebtn */
 .mode
 {
     display: flex;
@@ -50,6 +50,7 @@
     cursor: pointer;
 }
 
+/* searchbar */
 .search_tab{
     width: 40%;
     display: flex;
@@ -57,14 +58,6 @@
     background-color: white;
     height: 4rem;
     border-radius: 8px;
-}
-
-/* dark */
-
-.search_tab_dark
-{
-    background-color: #1a1a1a;
-    color: #F1EFEF;
 }
 
 .searchcol
@@ -105,6 +98,16 @@
 
 }
 
+/* dark  searchbar*/
+
+.search_tab_dark
+{
+    background-color: #1a1a1a;
+    color: #F1EFEF;
+}
+
+
+/* info containe */
 .info_container
 {
     background-color: #fff;
@@ -116,7 +119,7 @@
 
 }
 
-/* dark */
+/* dark info */
 .info_container_dark
 {
     background-color: #1a1a1a;
@@ -131,6 +134,7 @@
     
 }
 
+/*  joined date  */
 .name_date
 {
     display: flex;
@@ -150,6 +154,7 @@
     padding-top: 0.5rem;
 }
 
+/* profile */
 .profile_link
 {
 
@@ -195,6 +200,7 @@
     font-weight: 550;
 }
 
+/* footer */
 .footer_links
 {
     margin-top: 2.5rem;
@@ -225,6 +231,7 @@
 }
 
 
+/* notfound container */
 .notfound
 {
     display: flex;
@@ -244,10 +251,11 @@
     filter: brightness(50%);
 }
 
+
+/* loding container */
 .loading
 {
     margin-top: 5rem;
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
 }
@@ -259,6 +267,8 @@
     border-radius: 50%;
 }
 
+
+/* hide container */
 .hide{
     display: none;
 }
