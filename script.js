@@ -23,15 +23,13 @@ const dog=document.querySelector(".dog");
 const notfound=document.querySelector(".notfound");
 
 
-let mode=1;
+let mode=0;
 let date=new Date;
 let hours=String(date.getHours()).padStart(2, '0');
 console.log(hours);
-
-console.log(date);
-if(hours>=19 && hours<6 )
+if(hours>=19 || hours<6 )
 {
-    mode=0;
+    mode=1;
 }
 changemode();
 
